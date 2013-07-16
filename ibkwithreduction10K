@@ -1,0 +1,132 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 10 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     AlgoSelection-TrainSet (1)-weka.filters.unsupervised.attribute.NumericCleaner-min-1.7976931348623157E308-min-default-1.7976931348623157E308-max1.7976931348623157E308-max-default1.7976931348623157E308-closeto0.0-closeto-default0.0-closeto-tolerance1.0E-6-Rfirst-last-decimals-1-weka.filters.unsupervised.attribute.Remove-R41-48-weka.filters.unsupervised.attribute.Remove-V-R78,62,13,3,61,77,1,5,29,40,32,27,11,64,80,75,59,81,16,49,26,10,63,79,8,82,85,84,9,14,25,58,74,76,60,7,86,83,38,15,2,30,72,88,53,6,31,33,12,4,73,57,39,18,28,17,55,87,22,50,35,54,51,47,20,71,37,48,70,56,67,44,19,24,52,46,66,69,21,23,68,65,34,36,41,43,42,45,89
+Instances:    5842
+Attributes:   89
+              KB_Relative_Information_StDev
+              KB_Information_StDev
+              PercCorrect_tr-x1_vs_te-x1
+              Kappa_tr_vs_te-x1
+              KB_Information_tr-x1_vs_te-x1
+              KB_Relative_Information_tr-x1_vs_te-x1
+              Kappa_tr_vs_tr-x1
+              Kappa_tr-x1_vs_te-x1
+              IR_Recall_tr-x1_vs_te-x1
+              IR_Precision_Avg
+              IR_Recall_Avg
+              IR_Recall_tr_vs_te-x1
+              PercCorrect_tr_vs_te-x1
+              KB_Information_Avg
+              KB_Relative_Information_Avg
+              KB_Relative_Information_tr_vs_te-x1
+              KB_Information_tr_vs_te-x1
+              Unweighted_Macro_F_tr_vs_tr-x1
+              PercCorrect_Avg
+              SF_Entropy_Gain_tr_vs_tr-x1
+              IR_Recall_tr_vs_te
+              PercCorrect_tr_vs_te
+              KB_Information_Range
+              KB_Relative_Information_Range
+              Kappa_Avg
+              Unweighted_Macro_F_tr_vs_te
+              Unweighted_Macro_F_tr-x1_vs_te-x1
+              Unweighted_Macro_F_tr-x1_vs_te
+              PercCorrect_tr_vs_tr-x1
+              PercCorrect_StDev
+              IR_Recall_tr_vs_tr-x1
+              KB_Information_tr_vs_te
+              KB_Relative_Information_tr_vs_te
+              KB_Relative_Information_tr-x1_vs_te
+              KB_Information_tr-x1_vs_te
+              Kappa_Range
+              Unweighted_Macro_F_StDev
+              Unweighted_Macro_F_tr_vs_te-x1
+              IR_Precision_StDev
+              PercCorrect_Range
+              Kappa_tr_vs_te
+              IR_Recall_StDev
+              KB_Mean_Information_Avg
+              Unweighted_Macro_F_Avg
+              SF_Entropy_Gain_tr-x1_vs_te-x1
+              Kappa_StDev
+              IR_Recall_Range
+              IR_Precision_tr_vs_tr-x1
+              PercCorrect_tr-x1_vs_te
+              Kappa_tr-x1_vs_te
+              KB_Relative_Information_tr_vs_tr-x1
+              KB_Information_tr_vs_tr-x1
+              IR_Precision_Range
+              Weighted_AreaUnderROC_tr_vs_te
+              IR_Recall_tr-x1_vs_te
+              Weighted_AreaUnderROC_tr_vs_tr-x1
+              SF_Entropy_Gain_Range
+              Unweighted_Macro_F_Range
+              Weighted_AreaUnderROC_StDev
+              SF_Entropy_Gain_tr_vs_te
+              IR_Precision_tr_vs_te-x1
+              SF_Entropy_Gain_StDev
+              SF_Entropy_Gain_tr_vs_te-x1
+              SF_Entropy_Range
+              Weighted_AreaUnderROC_tr-x1_vs_te
+              KB_Mean_Information_Range
+              IR_Precision_tr-x1_vs_te-x1
+              SF_Entropy_Avg
+              KB_Mean_Information_StDev
+              SF_Entropy_Gain_Avg
+              KB_Mean_Information_tr_vs_te-x1
+              SF_Entropy_tr-x1_vs_te
+              Weighted_AreaUnderROC_tr_vs_te-x1
+              Weighted_AreaUnderROC_Avg
+              SF_Entropy_Gain_tr-x1_vs_te
+              SF_Entropy_StDev
+              KB_Mean_Information_tr_vs_te
+              KB_Mean_Information_tr-x1_vs_te-x1
+              Weighted_AreaUnderROC_tr-x1_vs_te-x1
+              Weighted_AreaUnderROC_Range
+              KB_Mean_Information_tr-x1_vs_te
+              KB_Mean_Information_tr_vs_tr-x1
+              IR_Precision_tr_vs_te
+              IR_Precision_tr-x1_vs_te
+              SF_Entropy_tr_vs_tr-x1
+              SF_Entropy_tr_vs_te-x1
+              SF_Entropy_tr_vs_te
+              SF_Entropy_tr-x1_vs_te-x1
+              TargetLabel
+Test mode:    10-fold cross-validation
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 10 inverse-distance-weighted nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Stratified cross-validation ===
+=== Summary ===
+
+Correctly Classified Instances        5433               92.999  %
+Incorrectly Classified Instances       409                7.001  %
+Kappa statistic                          0.6779
+Mean absolute error                      0.1018
+Root mean squared error                  0.2334
+Relative absolute error                 41.1496 %
+Root relative squared error             66.3815 %
+Coverage of cases (0.95 level)          98.7162 %
+Mean rel. region size (0.95 level)      66.1417 %
+Total Number of Instances             5842     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.984    0.387    0.938      0.984   0.96       0.691  0.929     0.984     Bad
+                 0.613    0.016    0.863      0.613   0.717      0.691  0.929     0.813     Good
+Weighted Avg.    0.93     0.334    0.927      0.93    0.925      0.691  0.929     0.96 
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 4916   82 |    a = Bad
+  327  517 |    b = Good
+

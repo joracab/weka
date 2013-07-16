@@ -1,0 +1,111 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.lazy.IBk -K 10 -W 0 -I -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""
+Relation:     AlgoSelection-TrainSet (1)-weka.filters.unsupervised.attribute.NumericCleaner-min-1.7976931348623157E308-min-default-1.7976931348623157E308-max1.7976931348623157E308-max-default1.7976931348623157E308-closeto0.0-closeto-default0.0-closeto-tolerance1.0E-6-Rfirst-last-decimals-1-weka.filters.unsupervised.attribute.Remove-R41-48-weka.filters.unsupervised.instance.RemoveMisclassified-Wweka.classifiers.lazy.IBk -K 5 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""-C-1-F0-T0.1-I0-weka.filters.unsupervised.attribute.Remove-R41-48-weka.filters.unsupervised.attribute.Remove-R57-64-weka.filters.unsupervised.attribute.Remove-R49-56-weka.filters.supervised.instance.SMOTE-C1-K5-P100.0-S1-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1-weka.filters.unsupervised.instance.Randomize-S42
+Instances:    4912
+Attributes:   65
+              Kappa_tr_vs_tr-x1
+              Kappa_tr_vs_te
+              Kappa_tr_vs_te-x1
+              Kappa_tr-x1_vs_te
+              Kappa_tr-x1_vs_te-x1
+              Kappa_StDev
+              Kappa_Range
+              Kappa_Avg
+              PercCorrect_tr_vs_tr-x1
+              PercCorrect_tr_vs_te
+              PercCorrect_tr_vs_te-x1
+              PercCorrect_tr-x1_vs_te
+              PercCorrect_tr-x1_vs_te-x1
+              PercCorrect_StDev
+              PercCorrect_Range
+              PercCorrect_Avg
+              Weighted_AreaUnderROC_tr_vs_tr-x1
+              Weighted_AreaUnderROC_tr_vs_te
+              Weighted_AreaUnderROC_tr_vs_te-x1
+              Weighted_AreaUnderROC_tr-x1_vs_te
+              Weighted_AreaUnderROC_tr-x1_vs_te-x1
+              Weighted_AreaUnderROC_StDev
+              Weighted_AreaUnderROC_Range
+              Weighted_AreaUnderROC_Avg
+              IR_Recall_tr_vs_tr-x1
+              IR_Recall_tr_vs_te
+              IR_Recall_tr_vs_te-x1
+              IR_Recall_tr-x1_vs_te
+              IR_Recall_tr-x1_vs_te-x1
+              IR_Recall_StDev
+              IR_Recall_Range
+              IR_Recall_Avg
+              IR_Precision_tr_vs_tr-x1
+              IR_Precision_tr_vs_te
+              IR_Precision_tr_vs_te-x1
+              IR_Precision_tr-x1_vs_te
+              IR_Precision_tr-x1_vs_te-x1
+              IR_Precision_StDev
+              IR_Precision_Range
+              IR_Precision_Avg
+              SF_Entropy_Gain_tr_vs_tr-x1
+              SF_Entropy_Gain_tr_vs_te
+              SF_Entropy_Gain_tr_vs_te-x1
+              SF_Entropy_Gain_tr-x1_vs_te
+              SF_Entropy_Gain_tr-x1_vs_te-x1
+              SF_Entropy_Gain_StDev
+              SF_Entropy_Gain_Range
+              SF_Entropy_Gain_Avg
+              KB_Relative_Information_tr_vs_tr-x1
+              KB_Relative_Information_tr_vs_te
+              KB_Relative_Information_tr_vs_te-x1
+              KB_Relative_Information_tr-x1_vs_te
+              KB_Relative_Information_tr-x1_vs_te-x1
+              KB_Relative_Information_StDev
+              KB_Relative_Information_Range
+              KB_Relative_Information_Avg
+              Unweighted_Macro_F_tr_vs_tr-x1
+              Unweighted_Macro_F_tr_vs_te
+              Unweighted_Macro_F_tr_vs_te-x1
+              Unweighted_Macro_F_tr-x1_vs_te
+              Unweighted_Macro_F_tr-x1_vs_te-x1
+              Unweighted_Macro_F_StDev
+              Unweighted_Macro_F_Range
+              Unweighted_Macro_F_Avg
+              TargetLabel
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+IB1 instance-based classifier
+using 10 inverse-distance-weighted nearest neighbour(s) for classification
+
+
+Time taken to build model: 0 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 7.33 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        4910               99.9593 %
+Incorrectly Classified Instances         2                0.0407 %
+Kappa statistic                          0.9989
+Mean absolute error                      0.0034
+Root mean squared error                  0.0232
+Relative absolute error                  0.8854 %
+Root relative squared error              5.3021 %
+Coverage of cases (0.95 level)         100      %
+Mean rel. region size (0.95 level)      51.2011 %
+Total Number of Instances             4912     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.999    0        1          0.999   1          0.999  1         1         Bad
+                 1        0.001    0.998      1       0.999      0.999  1         1         Good
+Weighted Avg.    1        0        1          1       1          0.999  1         1    
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3646    2 |    a = Bad
+    0 1264 |    b = Good
+

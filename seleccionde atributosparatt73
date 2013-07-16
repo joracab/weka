@@ -1,0 +1,160 @@
+=== Run information ===
+
+Evaluator:    weka.attributeSelection.InfoGainAttributeEval 
+Search:       weka.attributeSelection.Ranker -T -1.7976931348623157E308 -N -1
+Relation:     AlgoSelection-TrainSet (1)-weka.filters.unsupervised.attribute.NumericCleaner-min-1.7976931348623157E308-min-default-1.7976931348623157E308-max1.7976931348623157E308-max-default1.7976931348623157E308-closeto0.0-closeto-default0.0-closeto-tolerance1.0E-6-Rfirst-last-decimals-1-weka.filters.unsupervised.attribute.Remove-R41-48-weka.filters.unsupervised.attribute.Remove-R41-48,57-64-weka.filters.unsupervised.instance.RemoveMisclassified-Wweka.classifiers.lazy.IBk -K 5 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""-C-1-F0-T0.1-I0
+Instances:    5474
+Attributes:   73
+              Kappa_tr_vs_tr-x1
+              Kappa_tr_vs_te
+              Kappa_tr_vs_te-x1
+              Kappa_tr-x1_vs_te
+              Kappa_tr-x1_vs_te-x1
+              Kappa_StDev
+              Kappa_Range
+              Kappa_Avg
+              PercCorrect_tr_vs_tr-x1
+              PercCorrect_tr_vs_te
+              PercCorrect_tr_vs_te-x1
+              PercCorrect_tr-x1_vs_te
+              PercCorrect_tr-x1_vs_te-x1
+              PercCorrect_StDev
+              PercCorrect_Range
+              PercCorrect_Avg
+              Weighted_AreaUnderROC_tr_vs_tr-x1
+              Weighted_AreaUnderROC_tr_vs_te
+              Weighted_AreaUnderROC_tr_vs_te-x1
+              Weighted_AreaUnderROC_tr-x1_vs_te
+              Weighted_AreaUnderROC_tr-x1_vs_te-x1
+              Weighted_AreaUnderROC_StDev
+              Weighted_AreaUnderROC_Range
+              Weighted_AreaUnderROC_Avg
+              IR_Recall_tr_vs_tr-x1
+              IR_Recall_tr_vs_te
+              IR_Recall_tr_vs_te-x1
+              IR_Recall_tr-x1_vs_te
+              IR_Recall_tr-x1_vs_te-x1
+              IR_Recall_StDev
+              IR_Recall_Range
+              IR_Recall_Avg
+              IR_Precision_tr_vs_tr-x1
+              IR_Precision_tr_vs_te
+              IR_Precision_tr_vs_te-x1
+              IR_Precision_tr-x1_vs_te
+              IR_Precision_tr-x1_vs_te-x1
+              IR_Precision_StDev
+              IR_Precision_Range
+              IR_Precision_Avg
+              SF_Entropy_Gain_tr_vs_tr-x1
+              SF_Entropy_Gain_tr_vs_te
+              SF_Entropy_Gain_tr_vs_te-x1
+              SF_Entropy_Gain_tr-x1_vs_te
+              SF_Entropy_Gain_tr-x1_vs_te-x1
+              SF_Entropy_Gain_StDev
+              SF_Entropy_Gain_Range
+              SF_Entropy_Gain_Avg
+              KB_Mean_Information_tr_vs_tr-x1
+              KB_Mean_Information_tr_vs_te
+              KB_Mean_Information_tr_vs_te-x1
+              KB_Mean_Information_tr-x1_vs_te
+              KB_Mean_Information_tr-x1_vs_te-x1
+              KB_Mean_Information_StDev
+              KB_Mean_Information_Range
+              KB_Mean_Information_Avg
+              KB_Relative_Information_tr_vs_tr-x1
+              KB_Relative_Information_tr_vs_te
+              KB_Relative_Information_tr_vs_te-x1
+              KB_Relative_Information_tr-x1_vs_te
+              KB_Relative_Information_tr-x1_vs_te-x1
+              KB_Relative_Information_StDev
+              KB_Relative_Information_Range
+              KB_Relative_Information_Avg
+              Unweighted_Macro_F_tr_vs_tr-x1
+              Unweighted_Macro_F_tr_vs_te
+              Unweighted_Macro_F_tr_vs_te-x1
+              Unweighted_Macro_F_tr-x1_vs_te
+              Unweighted_Macro_F_tr-x1_vs_te-x1
+              Unweighted_Macro_F_StDev
+              Unweighted_Macro_F_Range
+              Unweighted_Macro_F_Avg
+              TargetLabel
+Evaluation mode:    10-fold cross-validation
+
+
+
+=== Attribute selection 10 fold cross-validation (stratified), seed: 1 ===
+
+average merit      average rank  attribute
+ 0.12  +- 0.003       2.6 +- 1.62     62 KB_Relative_Information_StDev
+ 0.12  +- 0.003       3   +- 1.26      3 Kappa_tr_vs_te-x1
+ 0.117 +- 0.006       5   +- 2.97     32 IR_Recall_Avg
+ 0.117 +- 0.008       5   +- 3.49     40 IR_Precision_Avg
+ 0.113 +- 0.005       6.3 +- 2.93     16 PercCorrect_Avg
+ 0.11  +- 0.005       9.2 +- 3.63     64 KB_Relative_Information_Avg
+ 0.11  +- 0.006      10   +- 3.49      1 Kappa_tr_vs_tr-x1
+ 0.109 +- 0.004      10.6 +- 2.8      61 KB_Relative_Information_tr-x1_vs_te-x1
+ 0.109 +- 0.01       10.8 +- 7.32     59 KB_Relative_Information_tr_vs_te-x1
+ 0.108 +- 0.008      11.3 +- 5.81     26 IR_Recall_tr_vs_te
+ 0.108 +- 0.005      11.8 +- 3.82     27 IR_Recall_tr_vs_te-x1
+ 0.108 +- 0.008      12.1 +- 5.89     10 PercCorrect_tr_vs_te
+ 0.105 +- 0.004      13.7 +- 3.55     65 Unweighted_Macro_F_tr_vs_tr-x1
+ 0.104 +- 0.006      13.8 +- 5        13 PercCorrect_tr-x1_vs_te-x1
+ 0.106 +- 0.004      14.2 +- 3.09     11 PercCorrect_tr_vs_te-x1
+ 0.102 +- 0.007      15.9 +- 5.91      5 Kappa_tr-x1_vs_te-x1
+ 0.102 +- 0.006      16.4 +- 4.29     29 IR_Recall_tr-x1_vs_te-x1
+ 0.099 +- 0.009      18.7 +- 7.28     12 PercCorrect_tr-x1_vs_te
+ 0.099 +- 0.01       19.3 +-10.46     36 IR_Precision_tr-x1_vs_te
+ 0.098 +- 0.006      19.4 +- 5.64     63 KB_Relative_Information_Range
+ 0.099 +- 0.01       20   +- 9.07     58 KB_Relative_Information_tr_vs_te
+ 0.096 +- 0.008      22.4 +- 7        28 IR_Recall_tr-x1_vs_te
+ 0.093 +- 0.003      24.3 +- 2.45      9 PercCorrect_tr_vs_tr-x1
+ 0.093 +- 0.006      24.8 +- 6.54     68 Unweighted_Macro_F_tr-x1_vs_te
+ 0.093 +- 0.009      26.5 +-10.49     34 IR_Precision_tr_vs_te
+ 0.089 +- 0.003      28   +- 2.1      41 SF_Entropy_Gain_tr_vs_tr-x1
+ 0.09  +- 0.004      28.2 +- 5.51     69 Unweighted_Macro_F_tr-x1_vs_te-x1
+ 0.09  +- 0.003      28.2 +- 2.32     25 IR_Recall_tr_vs_tr-x1
+ 0.09  +- 0.007      28.8 +- 7.7      66 Unweighted_Macro_F_tr_vs_te
+ 0.088 +- 0.005      30.6 +- 7.21     60 KB_Relative_Information_tr-x1_vs_te
+ 0.088 +- 0.006      31.3 +- 7.77     33 IR_Precision_tr_vs_tr-x1
+ 0.087 +- 0.004      32.1 +- 6.64     57 KB_Relative_Information_tr_vs_tr-x1
+ 0.086 +- 0.002      32.6 +- 3.04     56 KB_Mean_Information_Avg
+ 0.085 +- 0.003      34.6 +- 5.66      4 Kappa_tr-x1_vs_te
+ 0.085 +- 0.006      35.3 +- 7.82     72 Unweighted_Macro_F_Avg
+ 0.084 +- 0.004      36.3 +- 3.77      2 Kappa_tr_vs_te
+ 0.084 +- 0.006      37.1 +- 8.01     15 PercCorrect_Range
+ 0.083 +- 0.007      38.3 +- 9.49     31 IR_Recall_Range
+ 0.083 +- 0.003      38.6 +- 6.47     14 PercCorrect_StDev
+ 0.082 +- 0.005      38.9 +- 8.43      8 Kappa_Avg
+ 0.082 +- 0.004      39.1 +- 7.69     30 IR_Recall_StDev
+ 0.083 +- 0.005      39.9 +- 7.12      7 Kappa_Range
+ 0.082 +- 0.003      40.1 +- 3.86     38 IR_Precision_StDev
+ 0.082 +- 0.003      41.2 +- 6.37     70 Unweighted_Macro_F_StDev
+ 0.081 +- 0.002      41.7 +- 2.93     39 IR_Precision_Range
+ 0.08  +- 0.004      43.3 +- 4.88     42 SF_Entropy_Gain_tr_vs_te
+ 0.078 +- 0.003      46.7 +- 5.18      6 Kappa_StDev
+ 0.078 +- 0.002      47.3 +- 1.55     67 Unweighted_Macro_F_tr_vs_te-x1
+ 0.075 +- 0.005      48.9 +- 6.12     37 IR_Precision_tr-x1_vs_te-x1
+ 0.073 +- 0.004      52.1 +- 2.51     51 KB_Mean_Information_tr_vs_te-x1
+ 0.071 +- 0.008      52.3 +- 6.53     45 SF_Entropy_Gain_tr-x1_vs_te-x1
+ 0.072 +- 0.003      52.3 +- 1.9      18 Weighted_AreaUnderROC_tr_vs_te
+ 0.072 +- 0.004      52.8 +- 3.57     71 Unweighted_Macro_F_Range
+ 0.07  +- 0.006      53.2 +- 6.4      19 Weighted_AreaUnderROC_tr_vs_te-x1
+ 0.07  +- 0.006      53.5 +- 5.92     46 SF_Entropy_Gain_StDev
+ 0.068 +- 0.005      55.9 +- 4.74     47 SF_Entropy_Gain_Range
+ 0.066 +- 0.003      56.7 +- 2.53     43 SF_Entropy_Gain_tr_vs_te-x1
+ 0.066 +- 0.006      57.7 +- 4.69     20 Weighted_AreaUnderROC_tr-x1_vs_te
+ 0.064 +- 0.004      59.1 +- 3.62     48 SF_Entropy_Gain_Avg
+ 0.063 +- 0.002      60.1 +- 1.3      35 IR_Precision_tr_vs_te-x1
+ 0.054 +- 0.02       60.2 +-10.2      21 Weighted_AreaUnderROC_tr-x1_vs_te-x1
+ 0.062 +- 0.003      61   +- 2.19     17 Weighted_AreaUnderROC_tr_vs_tr-x1
+ 0.059 +- 0.004      62.9 +- 2.77     22 Weighted_AreaUnderROC_StDev
+ 0.057 +- 0.004      63.2 +- 3.19     24 Weighted_AreaUnderROC_Avg
+ 0.059 +- 0.002      63.3 +- 1.42     53 KB_Mean_Information_tr-x1_vs_te-x1
+ 0.057 +- 0.005      64   +- 2.57     44 SF_Entropy_Gain_tr-x1_vs_te
+ 0.056 +- 0.003      65.2 +- 1.6      54 KB_Mean_Information_StDev
+ 0.054 +- 0.002      66.6 +- 1.2      55 KB_Mean_Information_Range
+ 0.038 +- 0.008      69.7 +- 1.42     49 KB_Mean_Information_tr_vs_tr-x1
+ 0.037 +- 0.006      70.2 +- 0.87     23 Weighted_AreaUnderROC_Range
+ 0.034 +- 0.003      70.4 +- 1.11     50 KB_Mean_Information_tr_vs_te
+ 0.032 +- 0.002      71.4 +- 0.8      52 KB_Mean_Information_tr-x1_vs_te
+

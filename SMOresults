@@ -1,0 +1,188 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.functions.SMO -C 1.0 -L 0.001 -P 1.0E-12 -N 0 -V -1 -W 1 -K "weka.classifiers.functions.supportVector.PolyKernel -C 250007 -E 1.0"
+Relation:     AlgoSelection-TrainSet (1)-weka.filters.unsupervised.attribute.NumericCleaner-min-1.7976931348623157E308-min-default-1.7976931348623157E308-max1.7976931348623157E308-max-default1.7976931348623157E308-closeto0.0-closeto-default0.0-closeto-tolerance1.0E-6-Rfirst-last-decimals-1-weka.filters.unsupervised.attribute.Remove-R41-48-weka.filters.unsupervised.instance.RemoveMisclassified-Wweka.classifiers.lazy.IBk -K 5 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""-C-1-F0-T0.1-I0-weka.filters.unsupervised.attribute.Remove-R41-48-weka.filters.unsupervised.attribute.Remove-R57-64-weka.filters.unsupervised.attribute.Remove-R49-56-weka.filters.supervised.instance.SMOTE-C1-K5-P100.0-S1-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1-weka.filters.unsupervised.instance.Randomize-S42
+Instances:    4912
+Attributes:   65
+              Kappa_tr_vs_tr-x1
+              Kappa_tr_vs_te
+              Kappa_tr_vs_te-x1
+              Kappa_tr-x1_vs_te
+              Kappa_tr-x1_vs_te-x1
+              Kappa_StDev
+              Kappa_Range
+              Kappa_Avg
+              PercCorrect_tr_vs_tr-x1
+              PercCorrect_tr_vs_te
+              PercCorrect_tr_vs_te-x1
+              PercCorrect_tr-x1_vs_te
+              PercCorrect_tr-x1_vs_te-x1
+              PercCorrect_StDev
+              PercCorrect_Range
+              PercCorrect_Avg
+              Weighted_AreaUnderROC_tr_vs_tr-x1
+              Weighted_AreaUnderROC_tr_vs_te
+              Weighted_AreaUnderROC_tr_vs_te-x1
+              Weighted_AreaUnderROC_tr-x1_vs_te
+              Weighted_AreaUnderROC_tr-x1_vs_te-x1
+              Weighted_AreaUnderROC_StDev
+              Weighted_AreaUnderROC_Range
+              Weighted_AreaUnderROC_Avg
+              IR_Recall_tr_vs_tr-x1
+              IR_Recall_tr_vs_te
+              IR_Recall_tr_vs_te-x1
+              IR_Recall_tr-x1_vs_te
+              IR_Recall_tr-x1_vs_te-x1
+              IR_Recall_StDev
+              IR_Recall_Range
+              IR_Recall_Avg
+              IR_Precision_tr_vs_tr-x1
+              IR_Precision_tr_vs_te
+              IR_Precision_tr_vs_te-x1
+              IR_Precision_tr-x1_vs_te
+              IR_Precision_tr-x1_vs_te-x1
+              IR_Precision_StDev
+              IR_Precision_Range
+              IR_Precision_Avg
+              SF_Entropy_Gain_tr_vs_tr-x1
+              SF_Entropy_Gain_tr_vs_te
+              SF_Entropy_Gain_tr_vs_te-x1
+              SF_Entropy_Gain_tr-x1_vs_te
+              SF_Entropy_Gain_tr-x1_vs_te-x1
+              SF_Entropy_Gain_StDev
+              SF_Entropy_Gain_Range
+              SF_Entropy_Gain_Avg
+              KB_Relative_Information_tr_vs_tr-x1
+              KB_Relative_Information_tr_vs_te
+              KB_Relative_Information_tr_vs_te-x1
+              KB_Relative_Information_tr-x1_vs_te
+              KB_Relative_Information_tr-x1_vs_te-x1
+              KB_Relative_Information_StDev
+              KB_Relative_Information_Range
+              KB_Relative_Information_Avg
+              Unweighted_Macro_F_tr_vs_tr-x1
+              Unweighted_Macro_F_tr_vs_te
+              Unweighted_Macro_F_tr_vs_te-x1
+              Unweighted_Macro_F_tr-x1_vs_te
+              Unweighted_Macro_F_tr-x1_vs_te-x1
+              Unweighted_Macro_F_StDev
+              Unweighted_Macro_F_Range
+              Unweighted_Macro_F_Avg
+              TargetLabel
+Test mode:    user supplied test set:  size unknown (reading incrementally)
+
+=== Classifier model (full training set) ===
+
+SMO
+
+Kernel used:
+  Linear Kernel: K(x,y) = <x,y>
+
+Classifier for classes: Bad, Good
+
+BinarySMO
+
+Machine linear: showing attribute weights, not support vectors.
+
+        -1.5513 * (normalized) Kappa_tr_vs_tr-x1
+ +      -0.1507 * (normalized) Kappa_tr_vs_te
+ +       0.0961 * (normalized) Kappa_tr_vs_te-x1
+ +       0.1519 * (normalized) Kappa_tr-x1_vs_te
+ +       0.194  * (normalized) Kappa_tr-x1_vs_te-x1
+ +       4.4599 * (normalized) Kappa_StDev
+ +       0.6324 * (normalized) Kappa_Range
+ +      -0.0769 * (normalized) Kappa_Avg
+ +      -0.3739 * (normalized) PercCorrect_tr_vs_tr-x1
+ +      -0.0282 * (normalized) PercCorrect_tr_vs_te
+ +       0.4656 * (normalized) PercCorrect_tr_vs_te-x1
+ +       0.6601 * (normalized) PercCorrect_tr-x1_vs_te
+ +       1.321  * (normalized) PercCorrect_tr-x1_vs_te-x1
+ +      -1.2596 * (normalized) PercCorrect_StDev
+ +       1.5149 * (normalized) PercCorrect_Range
+ +      -0.2064 * (normalized) PercCorrect_Avg
+ +       0.5607 * (normalized) Weighted_AreaUnderROC_tr_vs_tr-x1
+ +      -2.0703 * (normalized) Weighted_AreaUnderROC_tr_vs_te
+ +      -1.3626 * (normalized) Weighted_AreaUnderROC_tr_vs_te-x1
+ +       0.2894 * (normalized) Weighted_AreaUnderROC_tr-x1_vs_te
+ +      -1.5866 * (normalized) Weighted_AreaUnderROC_tr-x1_vs_te-x1
+ +      -0.4995 * (normalized) Weighted_AreaUnderROC_StDev
+ +      -2.6842 * (normalized) Weighted_AreaUnderROC_Range
+ +      -4.1288 * (normalized) Weighted_AreaUnderROC_Avg
+ +      -0.5627 * (normalized) IR_Recall_tr_vs_tr-x1
+ +       2.0678 * (normalized) IR_Recall_tr_vs_te
+ +      -0.113  * (normalized) IR_Recall_tr_vs_te-x1
+ +      -1.9076 * (normalized) IR_Recall_tr-x1_vs_te
+ +       0.9445 * (normalized) IR_Recall_tr-x1_vs_te-x1
+ +       0.762  * (normalized) IR_Recall_StDev
+ +       0.1729 * (normalized) IR_Recall_Range
+ +      -0.7424 * (normalized) IR_Recall_Avg
+ +       1.9011 * (normalized) IR_Precision_tr_vs_tr-x1
+ +       0.9673 * (normalized) IR_Precision_tr_vs_te
+ +      -2.0763 * (normalized) IR_Precision_tr_vs_te-x1
+ +      -0.9802 * (normalized) IR_Precision_tr-x1_vs_te
+ +      -0.9232 * (normalized) IR_Precision_tr-x1_vs_te-x1
+ +      -0.5715 * (normalized) IR_Precision_StDev
+ +       1.909  * (normalized) IR_Precision_Range
+ +      -4.9529 * (normalized) IR_Precision_Avg
+ +       0.7562 * (normalized) SF_Entropy_Gain_tr_vs_tr-x1
+ +       3.0957 * (normalized) SF_Entropy_Gain_tr_vs_te
+ +       0.9475 * (normalized) SF_Entropy_Gain_tr_vs_te-x1
+ +       2.0391 * (normalized) SF_Entropy_Gain_tr-x1_vs_te
+ +      -0.9587 * (normalized) SF_Entropy_Gain_tr-x1_vs_te-x1
+ +       1.6535 * (normalized) SF_Entropy_Gain_StDev
+ +       1.9679 * (normalized) SF_Entropy_Gain_Range
+ +       1.4414 * (normalized) SF_Entropy_Gain_Avg
+ +       2.2296 * (normalized) KB_Relative_Information_tr_vs_tr-x1
+ +       1.0622 * (normalized) KB_Relative_Information_tr_vs_te
+ +      -0.7679 * (normalized) KB_Relative_Information_tr_vs_te-x1
+ +      -0.1697 * (normalized) KB_Relative_Information_tr-x1_vs_te
+ +      -1.2283 * (normalized) KB_Relative_Information_tr-x1_vs_te-x1
+ +      -0.5201 * (normalized) KB_Relative_Information_StDev
+ +      -1.1128 * (normalized) KB_Relative_Information_Range
+ +      -4.1104 * (normalized) KB_Relative_Information_Avg
+ +      -2.5396 * (normalized) Unweighted_Macro_F_tr_vs_tr-x1
+ +      -3.7578 * (normalized) Unweighted_Macro_F_tr_vs_te
+ +       0.2833 * (normalized) Unweighted_Macro_F_tr_vs_te-x1
+ +      -1.3807 * (normalized) Unweighted_Macro_F_tr-x1_vs_te
+ +       0.0235 * (normalized) Unweighted_Macro_F_tr-x1_vs_te-x1
+ +       2.0093 * (normalized) Unweighted_Macro_F_StDev
+ +      -0.158  * (normalized) Unweighted_Macro_F_Range
+ +       3.9684 * (normalized) Unweighted_Macro_F_Avg
+ +       4.9072
+
+Number of kernel evaluations: 9554826 (60.031% cached)
+
+
+
+Time taken to build model: 5.58 seconds
+
+=== Evaluation on test set ===
+
+Time taken to test model on supplied test set: 0.23 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        4362               88.8029 %
+Incorrectly Classified Instances       550               11.1971 %
+Kappa statistic                          0.6919
+Mean absolute error                      0.112 
+Root mean squared error                  0.3346
+Relative absolute error                 29.291  %
+Root relative squared error             76.5437 %
+Coverage of cases (0.95 level)          88.8029 %
+Mean rel. region size (0.95 level)      50      %
+Total Number of Instances             4912     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.951    0.293    0.904      0.951   0.927      0.696  0.829     0.896     Bad
+                 0.707    0.049    0.832      0.707   0.765      0.696  0.829     0.664     Good
+Weighted Avg.    0.888    0.23     0.885      0.888   0.885      0.696  0.829     0.836
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3468  180 |    a = Bad
+  370  894 |    b = Good
+

@@ -1,0 +1,230 @@
+=== Run information ===
+
+Scheme:       weka.classifiers.trees.J48 -C 0.25 -M 2
+Relation:     AlgoSelection-TrainSet (1)-weka.filters.unsupervised.attribute.NumericCleaner-min-1.7976931348623157E308-min-default-1.7976931348623157E308-max1.7976931348623157E308-max-default1.7976931348623157E308-closeto0.0-closeto-default0.0-closeto-tolerance1.0E-6-Rfirst-last-decimals-1-weka.filters.unsupervised.attribute.Remove-R41-48-weka.filters.unsupervised.instance.RemoveMisclassified-Wweka.classifiers.lazy.IBk -K 5 -W 0 -A "weka.core.neighboursearch.LinearNNSearch -A \"weka.core.EuclideanDistance -R first-last\""-C-1-F0-T0.1-I0-weka.filters.unsupervised.attribute.Remove-R41-48-weka.filters.unsupervised.attribute.Remove-R57-64-weka.filters.unsupervised.attribute.Remove-R49-56-weka.filters.supervised.instance.SMOTE-C1-K5-P100.0-S1-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1-weka.filters.supervised.instance.SMOTE-C0-K5-P100.0-S1-weka.filters.unsupervised.instance.Randomize-S42
+Instances:    4912
+Attributes:   65
+              Kappa_tr_vs_tr-x1
+              Kappa_tr_vs_te
+              Kappa_tr_vs_te-x1
+              Kappa_tr-x1_vs_te
+              Kappa_tr-x1_vs_te-x1
+              Kappa_StDev
+              Kappa_Range
+              Kappa_Avg
+              PercCorrect_tr_vs_tr-x1
+              PercCorrect_tr_vs_te
+              PercCorrect_tr_vs_te-x1
+              PercCorrect_tr-x1_vs_te
+              PercCorrect_tr-x1_vs_te-x1
+              PercCorrect_StDev
+              PercCorrect_Range
+              PercCorrect_Avg
+              Weighted_AreaUnderROC_tr_vs_tr-x1
+              Weighted_AreaUnderROC_tr_vs_te
+              Weighted_AreaUnderROC_tr_vs_te-x1
+              Weighted_AreaUnderROC_tr-x1_vs_te
+              Weighted_AreaUnderROC_tr-x1_vs_te-x1
+              Weighted_AreaUnderROC_StDev
+              Weighted_AreaUnderROC_Range
+              Weighted_AreaUnderROC_Avg
+              IR_Recall_tr_vs_tr-x1
+              IR_Recall_tr_vs_te
+              IR_Recall_tr_vs_te-x1
+              IR_Recall_tr-x1_vs_te
+              IR_Recall_tr-x1_vs_te-x1
+              IR_Recall_StDev
+              IR_Recall_Range
+              IR_Recall_Avg
+              IR_Precision_tr_vs_tr-x1
+              IR_Precision_tr_vs_te
+              IR_Precision_tr_vs_te-x1
+              IR_Precision_tr-x1_vs_te
+              IR_Precision_tr-x1_vs_te-x1
+              IR_Precision_StDev
+              IR_Precision_Range
+              IR_Precision_Avg
+              SF_Entropy_Gain_tr_vs_tr-x1
+              SF_Entropy_Gain_tr_vs_te
+              SF_Entropy_Gain_tr_vs_te-x1
+              SF_Entropy_Gain_tr-x1_vs_te
+              SF_Entropy_Gain_tr-x1_vs_te-x1
+              SF_Entropy_Gain_StDev
+              SF_Entropy_Gain_Range
+              SF_Entropy_Gain_Avg
+              KB_Relative_Information_tr_vs_tr-x1
+              KB_Relative_Information_tr_vs_te
+              KB_Relative_Information_tr_vs_te-x1
+              KB_Relative_Information_tr-x1_vs_te
+              KB_Relative_Information_tr-x1_vs_te-x1
+              KB_Relative_Information_StDev
+              KB_Relative_Information_Range
+              KB_Relative_Information_Avg
+              Unweighted_Macro_F_tr_vs_tr-x1
+              Unweighted_Macro_F_tr_vs_te
+              Unweighted_Macro_F_tr_vs_te-x1
+              Unweighted_Macro_F_tr-x1_vs_te
+              Unweighted_Macro_F_tr-x1_vs_te-x1
+              Unweighted_Macro_F_StDev
+              Unweighted_Macro_F_Range
+              Unweighted_Macro_F_Avg
+              TargetLabel
+Test mode:    evaluate on training data
+
+=== Classifier model (full training set) ===
+
+J48 pruned tree
+------------------
+
+SF_Entropy_Gain_StDev <= 2.756651: Good (175.0)
+SF_Entropy_Gain_StDev > 2.756651
+|   Kappa_Avg <= 0.093537
+|   |   PercCorrect_Range <= 21.589069
+|   |   |   IR_Precision_tr-x1_vs_te <= 0.060365
+|   |   |   |   Kappa_tr_vs_tr-x1 <= 0.012367: Good (19.0)
+|   |   |   |   Kappa_tr_vs_tr-x1 > 0.012367: Bad (2.0)
+|   |   |   IR_Precision_tr-x1_vs_te > 0.060365: Bad (196.0/1.0)
+|   |   PercCorrect_Range > 21.589069
+|   |   |   KB_Relative_Information_tr_vs_tr-x1 <= 834.414718
+|   |   |   |   IR_Recall_Avg <= 0.549403: Bad (22.0)
+|   |   |   |   IR_Recall_Avg > 0.549403: Good (4.0)
+|   |   |   KB_Relative_Information_tr_vs_tr-x1 > 834.414718
+|   |   |   |   IR_Recall_Avg <= 0.581731
+|   |   |   |   |   Unweighted_Macro_F_Avg <= 0.520825
+|   |   |   |   |   |   Weighted_AreaUnderROC_tr-x1_vs_te <= 0.301019: Good (224.0)
+|   |   |   |   |   |   Weighted_AreaUnderROC_tr-x1_vs_te > 0.301019
+|   |   |   |   |   |   |   Unweighted_Macro_F_tr_vs_te-x1 <= 0.330565: Bad (13.0)
+|   |   |   |   |   |   |   Unweighted_Macro_F_tr_vs_te-x1 > 0.330565
+|   |   |   |   |   |   |   |   Weighted_AreaUnderROC_Avg <= 0.549138: Good (164.0)
+|   |   |   |   |   |   |   |   Weighted_AreaUnderROC_Avg > 0.549138
+|   |   |   |   |   |   |   |   |   SF_Entropy_Gain_Avg <= 10.167955: Bad (3.0)
+|   |   |   |   |   |   |   |   |   SF_Entropy_Gain_Avg > 10.167955: Good (22.0/1.0)
+|   |   |   |   |   Unweighted_Macro_F_Avg > 0.520825
+|   |   |   |   |   |   Weighted_AreaUnderROC_tr-x1_vs_te <= 0.279815: Good (31.0)
+|   |   |   |   |   |   Weighted_AreaUnderROC_tr-x1_vs_te > 0.279815
+|   |   |   |   |   |   |   SF_Entropy_Gain_tr_vs_tr-x1 <= 27.629873: Bad (31.0)
+|   |   |   |   |   |   |   SF_Entropy_Gain_tr_vs_tr-x1 > 27.629873
+|   |   |   |   |   |   |   |   IR_Precision_tr_vs_tr-x1 <= 0.016623: Good (17.0/1.0)
+|   |   |   |   |   |   |   |   IR_Precision_tr_vs_tr-x1 > 0.016623: Bad (5.0)
+|   |   |   |   IR_Recall_Avg > 0.581731
+|   |   |   |   |   Weighted_AreaUnderROC_Avg <= 0.520429: Good (5.0)
+|   |   |   |   |   Weighted_AreaUnderROC_Avg > 0.520429
+|   |   |   |   |   |   KB_Relative_Information_Avg <= 4834.42214: Good (4.0/1.0)
+|   |   |   |   |   |   KB_Relative_Information_Avg > 4834.42214: Bad (21.0)
+|   Kappa_Avg > 0.093537
+|   |   SF_Entropy_Gain_tr-x1_vs_te-x1 <= 385.914323
+|   |   |   KB_Relative_Information_StDev <= 2060.361485
+|   |   |   |   KB_Relative_Information_tr_vs_tr-x1 <= 247.308757
+|   |   |   |   |   PercCorrect_tr-x1_vs_te-x1 <= 9.94174: Good (3.0)
+|   |   |   |   |   PercCorrect_tr-x1_vs_te-x1 > 9.94174: Bad (41.0)
+|   |   |   |   KB_Relative_Information_tr_vs_tr-x1 > 247.308757
+|   |   |   |   |   IR_Recall_tr_vs_te-x1 <= 0.259267: Good (58.0)
+|   |   |   |   |   IR_Recall_tr_vs_te-x1 > 0.259267: Bad (5.0)
+|   |   |   KB_Relative_Information_StDev > 2060.361485
+|   |   |   |   IR_Precision_Avg <= 0.583982
+|   |   |   |   |   PercCorrect_tr-x1_vs_te-x1 <= 39.248252
+|   |   |   |   |   |   Unweighted_Macro_F_tr_vs_tr-x1 <= -0.025382
+|   |   |   |   |   |   |   PercCorrect_tr_vs_te-x1 <= 18.109317: Good (187.0/3.0)
+|   |   |   |   |   |   |   PercCorrect_tr_vs_te-x1 > 18.109317: Bad (3.0)
+|   |   |   |   |   |   Unweighted_Macro_F_tr_vs_tr-x1 > -0.025382
+|   |   |   |   |   |   |   SF_Entropy_Gain_tr_vs_te-x1 <= 130.078047
+|   |   |   |   |   |   |   |   SF_Entropy_Gain_StDev <= 28.456737
+|   |   |   |   |   |   |   |   |   IR_Precision_StDev <= 0.110648: Good (20.0/1.0)
+|   |   |   |   |   |   |   |   |   IR_Precision_StDev > 0.110648: Bad (20.0)
+|   |   |   |   |   |   |   |   SF_Entropy_Gain_StDev > 28.456737: Bad (152.0)
+|   |   |   |   |   |   |   SF_Entropy_Gain_tr_vs_te-x1 > 130.078047
+|   |   |   |   |   |   |   |   SF_Entropy_Gain_tr-x1_vs_te <= 88.646602: Good (8.0)
+|   |   |   |   |   |   |   |   SF_Entropy_Gain_tr-x1_vs_te > 88.646602
+|   |   |   |   |   |   |   |   |   IR_Recall_tr-x1_vs_te-x1 <= 0.368511: Bad (19.0)
+|   |   |   |   |   |   |   |   |   IR_Recall_tr-x1_vs_te-x1 > 0.368511: Good (4.0/1.0)
+|   |   |   |   |   PercCorrect_tr-x1_vs_te-x1 > 39.248252
+|   |   |   |   |   |   SF_Entropy_Gain_tr_vs_tr-x1 <= 17.790975: Bad (3.0)
+|   |   |   |   |   |   SF_Entropy_Gain_tr_vs_tr-x1 > 17.790975: Good (27.0)
+|   |   |   |   IR_Precision_Avg > 0.583982
+|   |   |   |   |   IR_Recall_tr_vs_te <= 0.382705
+|   |   |   |   |   |   IR_Precision_Avg <= 0.64573
+|   |   |   |   |   |   |   IR_Precision_Avg <= 0.645024
+|   |   |   |   |   |   |   |   PercCorrect_tr_vs_te <= 30.785733
+|   |   |   |   |   |   |   |   |   Weighted_AreaUnderROC_tr_vs_tr-x1 <= -0.00386
+|   |   |   |   |   |   |   |   |   |   PercCorrect_Range <= 27.534028: Bad (69.0)
+|   |   |   |   |   |   |   |   |   |   PercCorrect_Range > 27.534028
+|   |   |   |   |   |   |   |   |   |   |   Weighted_AreaUnderROC_Avg <= 0.614761: Good (7.0)
+|   |   |   |   |   |   |   |   |   |   |   Weighted_AreaUnderROC_Avg > 0.614761: Bad (4.0)
+|   |   |   |   |   |   |   |   |   Weighted_AreaUnderROC_tr_vs_tr-x1 > -0.00386: Bad (702.0/2.0)
+|   |   |   |   |   |   |   |   PercCorrect_tr_vs_te > 30.785733
+|   |   |   |   |   |   |   |   |   IR_Recall_tr_vs_tr-x1 <= 0.035976: Bad (33.0)
+|   |   |   |   |   |   |   |   |   IR_Recall_tr_vs_tr-x1 > 0.035976: Good (22.0/1.0)
+|   |   |   |   |   |   |   IR_Precision_Avg > 0.645024
+|   |   |   |   |   |   |   |   IR_Precision_Avg <= 0.645622: Bad (8.0)
+|   |   |   |   |   |   |   |   IR_Precision_Avg > 0.645622: Good (18.0)
+|   |   |   |   |   |   IR_Precision_Avg > 0.64573: Bad (1538.0/1.0)
+|   |   |   |   |   IR_Recall_tr_vs_te > 0.382705
+|   |   |   |   |   |   Unweighted_Macro_F_tr_vs_te <= 0.45097
+|   |   |   |   |   |   |   SF_Entropy_Gain_tr_vs_tr-x1 <= 17.838966: Bad (115.0)
+|   |   |   |   |   |   |   SF_Entropy_Gain_tr_vs_tr-x1 > 17.838966
+|   |   |   |   |   |   |   |   Kappa_tr_vs_tr-x1 <= 0.000567
+|   |   |   |   |   |   |   |   |   SF_Entropy_Gain_Avg <= 94.049274
+|   |   |   |   |   |   |   |   |   |   IR_Precision_Avg <= 0.778037
+|   |   |   |   |   |   |   |   |   |   |   Weighted_AreaUnderROC_tr_vs_tr-x1 <= -0.004068
+|   |   |   |   |   |   |   |   |   |   |   |   Kappa_StDev <= 0.519945: Bad (3.0)
+|   |   |   |   |   |   |   |   |   |   |   |   Kappa_StDev > 0.519945: Good (2.0)
+|   |   |   |   |   |   |   |   |   |   |   Weighted_AreaUnderROC_tr_vs_tr-x1 > -0.004068: Good (89.0/2.0)
+|   |   |   |   |   |   |   |   |   |   IR_Precision_Avg > 0.778037: Bad (6.0/1.0)
+|   |   |   |   |   |   |   |   |   SF_Entropy_Gain_Avg > 94.049274: Bad (15.0)
+|   |   |   |   |   |   |   |   Kappa_tr_vs_tr-x1 > 0.000567: Bad (47.0)
+|   |   |   |   |   |   Unweighted_Macro_F_tr_vs_te > 0.45097: Bad (308.0/1.0)
+|   |   SF_Entropy_Gain_tr-x1_vs_te-x1 > 385.914323
+|   |   |   IR_Precision_StDev <= 0.324859
+|   |   |   |   Kappa_Range <= 0.775253
+|   |   |   |   |   Weighted_AreaUnderROC_tr_vs_tr-x1 <= 0.001073: Bad (5.0)
+|   |   |   |   |   Weighted_AreaUnderROC_tr_vs_tr-x1 > 0.001073: Good (43.0)
+|   |   |   |   Kappa_Range > 0.775253
+|   |   |   |   |   SF_Entropy_Gain_tr_vs_tr-x1 <= 96.565133
+|   |   |   |   |   |   Kappa_tr_vs_tr-x1 <= -0.005085
+|   |   |   |   |   |   |   Weighted_AreaUnderROC_tr_vs_tr-x1 <= -0.004993: Bad (7.0)
+|   |   |   |   |   |   |   Weighted_AreaUnderROC_tr_vs_tr-x1 > -0.004993
+|   |   |   |   |   |   |   |   IR_Precision_tr-x1_vs_te <= 0.359442: Bad (6.0)
+|   |   |   |   |   |   |   |   IR_Precision_tr-x1_vs_te > 0.359442: Good (36.0/1.0)
+|   |   |   |   |   |   Kappa_tr_vs_tr-x1 > -0.005085: Bad (226.0)
+|   |   |   |   |   SF_Entropy_Gain_tr_vs_tr-x1 > 96.565133
+|   |   |   |   |   |   Unweighted_Macro_F_StDev <= 0.285783: Good (52.0)
+|   |   |   |   |   |   Unweighted_Macro_F_StDev > 0.285783: Bad (14.0)
+|   |   |   IR_Precision_StDev > 0.324859: Good (29.0)
+
+Number of Leaves  : 	58
+
+Size of the tree : 	115
+
+
+Time taken to build model: 1.51 seconds
+
+=== Evaluation on training set ===
+
+Time taken to test model on training data: 0.01 seconds
+
+=== Summary ===
+
+Correctly Classified Instances        4894               99.6336 %
+Incorrectly Classified Instances        18                0.3664 %
+Kappa statistic                          0.9904
+Mean absolute error                      0.0069
+Root mean squared error                  0.0588
+Relative absolute error                  1.8105 %
+Root relative squared error             13.4564 %
+Coverage of cases (0.95 level)          99.715  %
+Mean rel. region size (0.95 level)      50.3156 %
+Total Number of Instances             4912     
+
+=== Detailed Accuracy By Class ===
+
+                 TP Rate  FP Rate  Precision  Recall  F-Measure  MCC    ROC Area  PRC Area  Class
+                 0.997    0.005    0.998      0.997   0.998      0.99   0.999     0.999     Bad
+                 0.995    0.003    0.991      0.995   0.993      0.99   0.999     0.997     Good
+Weighted Avg.    0.996    0.004    0.996      0.996   0.996      0.99   0.999     0.999
+
+=== Confusion Matrix ===
+
+    a    b   <-- classified as
+ 3636   12 |    a = Bad
+    6 1258 |    b = Good
+
