@@ -1,0 +1,61 @@
+# a quick classification example
+
+library(class)
+setwd("C:\\Users\\jose\\Desktop\\Proyectos\\kaggle\\TFI\\Data")
+
+#import datasets from working directory
+train <- read.csv("train.csv") #use nrows=1000 rows for speed during feature engineering
+test <- read.csv("test.csv",nrows=1000) #use nrows=1000 rows for speed during feature engineering
+#dataclean
+
+
+is.na(train)
+train<- na.omit(train)
+test<- na.omit(test)
+train$Open.Date<-as.numeric(train$Open.Date)
+train$Type<-as.numeric(train$Type)
+train$City<-as.numeric(train$City)
+train$City.Group<-as.numeric(train$City.Group)
+#convert to numeric
+test$Open.Date<-as.numeric(test$Open.Date)
+test$Type<-as.numeric(test$Type)
+test$City<-as.numeric(test$City)
+test$City.Group<-as.numeric(test$City.Group)
+
+library(clusterSim)
+# normalization
+train1<- data.Normalization(train,type="n4",normalization="column")
+test1<- data.Normalization(test,type="n4",normalization="column")
+# add new column for prediction
+test1["revenue"]<- 0.7
+
+cor(train1)
+
+splom(train1)
+
+
+
+traindata<-train1[,1:42]
+testdata<-test1[,1:42]
+train__target<-train1[,43]
+test_target<-test1[,43]
+# number of k
+sqrt(137)
+
+cl <-train__target
+pred<- knn(train=traindata,test=testdata,cl, k = 10)
+# add the predictions to the plot
+summary(pred)
+
+table(numericpred)
+
+numericpred<- as.numeric(as.character(pred))
+
+specify_decimal <- function(x, k) format(round(x, k), nsmall=k)
+
+specify_decimal(numericpred,5) 
+specify_decimal(pred,5) 
+
+mse.test <- apply((numericpred - test_target)^2 , 2, mean)
+require(caret)
+RMSE(numericpred,test_target,na.rm=FALSE)
